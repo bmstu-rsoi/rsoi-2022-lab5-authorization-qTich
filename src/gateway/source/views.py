@@ -15,6 +15,11 @@ from .circuitbreaker import (
 
 
 @api_view(["GET"])
+def callback(WSGIRequest, **kwargs):
+    return JsonResponse({}, status=200)
+
+
+@api_view(["GET"])
 @validate_on_cb(
     service=Service.RATING, url="http://rating:8050/api/v1/rating",
     on_unavailable={"message": "Bonus Service unavailable"},
