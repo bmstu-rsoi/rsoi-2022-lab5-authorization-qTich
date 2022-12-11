@@ -1,0 +1,36 @@
+[
+    {
+        "model": "auth.User",
+        "pk": 1,
+        "fields": {
+          "username": "TestMax",
+          "password": "pbkdf2_sha256$390000$3XzZ9IfN70S6FcLJ4NiTH8$2DgHT03T3c1CZsU/64fBfUmLvdUj63Noh9QYMhTrP8o=",
+          "last_login": null,
+          "is_superuser": false,
+          "first_name": "",
+          "last_name": "",
+          "email": "",
+          "is_staff": false,
+          "is_active": true,
+          "date_joined": "2022-12-11T15:09:13.399Z",
+          "groups": [],
+          "user_permissions": []
+        }
+    }, {
+        "model": "oauth2_provider.Application",
+        "pk": 1,
+        "fields": {
+          "client_id": "BDgzoBFQ4OHG4zR2inCu0m3k3Eu1hUOJBcGFeftX",
+          "user": 1,
+          "redirect_uris": "",
+          "client_type": "public",
+          "authorization_grant_type": "password",
+          "client_secret": "pbkdf2_sha256$390000$uTs7SA8vxm0DbtCMj51J6L$SUOgfP87CS3XgP8IHh+3LAXrItNXxyzQ3ALpnrqT4QY=",
+          "name": "",
+          "skip_authorization": false,
+          "created": "2022-12-11T14:31:46.236Z",
+          "updated": "2022-12-11T14:31:46.236Z",
+          "algorithm": "RS256"
+        }
+    }
+]

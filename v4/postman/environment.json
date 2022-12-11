@@ -4,27 +4,27 @@
   "values": [
     {
       "key": "serviceUrl",
-      "value": "",
+      "value": "http://51.250.68.31",
       "enabled": true
     },
     {
       "key": "identityProviderUrl",
-      "value": "",
+      "value": "http://51.250.68.31",
       "enabled": true
     },
     {
       "key": "username",
-      "value": "",
+      "value": "TestMax",
       "enabled": true
     },
     {
       "key": "password",
-      "value": "",
+      "value": "MfEZ6BLZuPcbhJk",
       "enabled": true
     },
     {
       "key": "clientId",
-      "value": "",
+      "value": "BDgzoBFQ4OHG4zR2inCu0m3k3Eu1hUOJBcGFeftX",
       "enabled": true
     },
     {
