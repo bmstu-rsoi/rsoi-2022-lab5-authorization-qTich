@@ -205,7 +205,7 @@ def reservations_uuid(WSGIRequest, instance: JsonResponse | Request, params: dic
     as_method="PATCH",
 )
 def reservations_uuid_return(WSGIRequest, instance: JsonResponse | Request, params: dict) -> JsonResponse | Request:
-    reservation_data = as_json(instance.content)
+    reservation_data = map_kwargs(**as_json(instance.content))
     is_expired = reservation_data.get("status") == "EXPIRED"
     book_instance = libraries_uuid_books_uuid_return(
         WSGIRequest, method="PATCH",
