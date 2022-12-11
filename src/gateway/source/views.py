@@ -223,7 +223,7 @@ def reservations_uuid_return(WSGIRequest, instance: JsonResponse | Request, para
             WSGIRequest, method="PATCH",
             on_unavailable={"message": "Bonus Service unavailable"}, query_params={"stars": 10}
         )
-    if as_json(book_instance.content).get("condition") != reservation_data.get("condition"):
+    if as_json(book_instance.content).get("condition") != params.get("condition"):
         rating_decrease(
             WSGIRequest, method="PATCH",
             on_unavailable={"message": "Bonus Service unavailable"}, query_params={"stars": 10}
